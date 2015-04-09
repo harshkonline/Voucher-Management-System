@@ -1,0 +1,24 @@
+			IN FILE
+	*****************************************************************
+			Header Description
+	*****************************************************************
+			CUSTOMER NAME : Mikey
+			Quantity : 1
+			TYPE : plastic
+			PROFILE NAME : Night Call
+			MRP : 2
+			TALKTIME : 30
+			SERVICE TAX : 4
+			PROCESSING FEE : 4
+			ADMIN FEE : 35
+			STATE TAX : 55
+			MISC : 5
+			VALIDITY PERIOD : 5
+			GRACE PERIOD 1 : Night Call
+			GRACE PERIOD 2 : 5
+			QUARANTINE PERIOD : 5
+			SHELF LIFE : 3
+			TRANSPORT KEY : 3358
+	*****************************************************************
+			----Vouchers----
+		SERIAL NO:100NI7921G2298		PIN NO:429ccf8db6594330

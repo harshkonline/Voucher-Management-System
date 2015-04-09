@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="enroll">
+			<result>/Enroll.jsp</result>
+		</action>	
+		<action name="adminhome">
+			<result>/admin_home.jsp</result>
+		</action>
+		<action name="logout" class="actions.Login.LogOutAction">
+			<result>/index.jsp</result>
+		</action>
+		<action name="operatorHome">
+			<result>/operator_home.jsp</result>
+		</action>
+	</package>
+	<include file="actions/Login/Login.xml"/>
+	<include file="actions/admin/admin.xml"/>
+	<include file="actions/GenerateVoucher/generateVouchers.xml"/>
+	<include file="actions/purchaseorder/purchaseorder.xml"></include>
+	<include file="actions/VoucherProfileManagement/voucherprofilemanagement.xml"/>
+	<include file="actions/operator/operator.xml"/>
+</struts>

@@ -1,0 +1,172 @@
+/*
+ *	DBA : Lakhan
+ *	Date : 28-01-2011
+ */
+Table 1
+1-10
+
+create table Role_Details_300(
+role_id number(5) not null primary key,
+role_name varchar2(25) not null,
+role_descr varchar2(50)
+);
+
+
+Table 2
+100-200
+
+create table User_Details_300(
+user_id varchar2(25) not null primary key,
+password varchar2(15) not null,
+role_id number(5),
+constraint fk_roleid foreign key (role_id) references Role_Details_300(role_id)
+on delete cascade
+);
+
+Table 3
+500-600
+
+create table Vendor_Details_300(
+vnd_id number(10) not null primary key,
+vnd_name varchar2(25) not null,
+vnd_address varchar2(50) not null,
+vnd_email varchar2(30) not null,
+vnd_phone number(11)
+);
+
+Table 4
+1000-1100
+
+create table Voucher_Profiles_300 (
+vp_name varchar2(50) not null primary key,
+vp_gracePeriod1 number(11) not null,
+vp_gracePeriod2 number(11) not null,
+vp_quartinePeriod number(11) not null,
+vp_shelflife number(11) not null,
+vp_talktime number(7,2) not null,
+vp_adminFees number(7,2) not null,
+vp_serviceTax number(7,2) not null,
+vp_processingFees number(7,2) not null,
+vp_mrp number(7,2) not null,
+vp_stateTax number(7,2) not null,
+vp_misc number(7,2) not null,
+vp_validityPeriod number(5)
+);
+
+Table 5
+
+status :
+p-pending
+a-approved
+r-rejected
+s-ready for printing
+d-printed
+
+create table PO_Details_300 (
+po_number  number(11) not null primary key,
+vp_name varchar2(50) not null,
+vp_quantity number(11) not null,
+vp_dateOfOrder date not null,
+vp_dateOfDelivery date not null,
+vp_printMedia varchar2(20) not null,
+vnd_id number(10) not null,
+vp_netAmount number(7,2) not null,
+vp_discount number(7,2) ,
+vp_unitPrice number(7,2) not null,
+vp_status varchar2(10) not null,
+constraint fk_PO_name foreign key (vp_name) references Voucher_Profiles_300(vp_name)
+on delete cascade,
+constraint fk_vnd_id foreign key (vnd_id) references Vendor_Details_300(vnd_id)
+on delete cascade
+);
+
+insert into PO_Details_300 values (
+po_number_sequence.NEXTVAL,
+vp_name,vp_quantity,SYSDATE,deliverydate,"vnd_id",
+"nety amount",vp_discount,vp_unitPrice,"pending",
+);
+
+Table 6
+
+create table Voucher_Details_300 (
+vch_id  number(11) not null primary key,
+vp_name varchar2(50) not null,
+vch_pincode varchar2(20) not null,
+vch_serialNo varchar2(20) not null,
+vp_dateOfDelivery date ,
+vp_printMedia varchar2(20) ,
+vch_quantity number(11) ,
+vp_netAmount number(7,2) not null,
+vp_discount number(7,2) ,
+vp_unitPrice number(7,2) not null,
+po_number number(11) ,
+constraint fk_vch_name foreign key (vp_name) references Voucher_Profiles_300(vp_name)
+on delete cascade,
+constraint fk_po_number foreign key (po_number) references PO_Details_300(po_number)
+on delete cascade
+);
+
+Table 7
+
+create table user_extraDetails_300(
+user_id varchar2(25) not null,
+question varchar2(50) not null,
+answer varchar2(50) not null,
+constraint fk_userid foreign key (user_id) references User_Details_300(user_id)
+on delete cascade
+);
+
+Table 8
+
+create table questions_300(
+que_id number(4) not null primary key,
+que varchar2(50) not null
+);
+
+select * from Role_Details_300;
+select * from User_Details_300;
+select * from Vendor_Details_300;
+select * from Voucher_Profiles_300;
+select * from PO_Details_300;
+select * from Voucher_Details_300;
+select * from User_extraDetails_300;
+select * from questions_300;
+
+desc Role_Details_300
+desc User_Details_300
+desc Vendor_Details_300
+desc Voucher_Profiles_300
+desc PO_Details_300
+desc Voucher_Details_300
+desc User_extraDetails_300
+
+drop table Role_Details_300;
+drop table User_Details_300;
+drop table Vendor_Details_300;
+drop table Voucher_Profiles_300;
+drop table PO_Details_300;
+drop table Voucher_Details_300;
+drop table User_extraDetails_300
+
+drop sequence po_number_sequence;
+drop sequence vch_id_sequence;
+
+create sequence po_number_sequence
+INCREMENT by 1
+START WITH 10000
+MAXVALUE 99999999999
+NOCYCLE;
+
+select po_number_sequence.NEXTVAL from dual;
+select po_number_sequence.CURRVAL from dual;
+
+create sequence vch_id_sequence
+INCREMENT by 1
+START WITH 1000
+MAXVALUE 99999999999
+NOCYCLE;
+
+select vch_id_sequence.NEXTVAL from dual;
+select vch_id_sequence.CURRVAL from dual;
+
+

@@ -1,0 +1,26 @@
+			IN FILE
+	*****************************************************************
+			Header Description
+	*****************************************************************
+			CUSTOMER NAME : vnd5
+			Quantity : 3
+			TYPE : plastic
+			PROFILE NAME : SMS & GPRS
+			MRP : 10
+			TALKTIME : 30
+			SERVICE TAX : 20
+			PROCESSING FEE : 30
+			ADMIN FEE : 1
+			STATE TAX : 70
+			MISC : 4
+			VALIDITY PERIOD : 6
+			GRACE PERIOD 1 : SMS & GPRS
+			GRACE PERIOD 2 : 10
+			QUARANTINE PERIOD : 5
+			SHELF LIFE : 5
+			TRANSPORT KEY : 3286
+	*****************************************************************
+			----Vouchers----
+		SERIAL NO:100SM7921S1765		PIN NO:429ccf8db6594330
+		SERIAL NO:100SM7921S1766		PIN NO:d6d8c8ce2140a46c
+		SERIAL NO:100SM7921S1767		PIN NO:69ce96782c638324

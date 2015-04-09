@@ -1,0 +1,25 @@
+			IN FILE
+	*****************************************************************
+			Header Description
+	*****************************************************************
+			CUSTOMER NAME : vnd4
+			Quantity : 2
+			TYPE : plastic
+			PROFILE NAME : Night Call
+			MRP : 2
+			TALKTIME : 30
+			SERVICE TAX : 4
+			PROCESSING FEE : 4
+			ADMIN FEE : 35
+			STATE TAX : 55
+			MISC : 5
+			VALIDITY PERIOD : 5
+			GRACE PERIOD 1 : Night Call
+			GRACE PERIOD 2 : 5
+			QUARANTINE PERIOD : 5
+			SHELF LIFE : 3
+			TRANSPORT KEY : 3285
+	*****************************************************************
+			----Vouchers----
+		SERIAL NO:100NI7921G1761		PIN NO:429ccf8db6594330
+		SERIAL NO:100NI7921G1762		PIN NO:d6d8c8ce2140a46c

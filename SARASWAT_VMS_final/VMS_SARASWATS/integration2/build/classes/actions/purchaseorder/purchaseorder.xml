@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	<package name="purchaseorder"  extends="struts-default">
+		
+		<action name="purchaseOrder" class="actions.purchaseorder.ViewPurchaseOrderAction">
+			<result>/PurchaseOrder/ViewPO.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		
+		<action name="viewPurchaseOrder">
+			<result name="success">/PurchaseOrder/ViewPurchaseOrder.jsp</result>
+		</action>	
+				
+		<action name="viewDetails" class="actions.purchaseorder.ViewDetailsAction">
+			<result>/PurchaseOrder/UpdateApproveRejectPO.jsp</result>	
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>	
+		</action>
+		
+		<action name="UpdateApproveReject" class="actions.purchaseorder.UpdateApproveRejectAction">
+			<result>/PurchaseOrder/a.jsp</result>
+			<result name="input">/PurchaseOrder/UpdateApproveRejectPO.jsp</result>
+			<result name="update_success">/PurchaseOrder/updatesuccess.jsp</result>
+			<result name="approve_success">/PurchaseOrder/approvesuccess.jsp</result>
+			<result name="reject_success">/PurchaseOrder/rejectsuccess.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+	
+		<action name="searchPurchaseOrder">
+			<result name="success">/PurchaseOrder/SearchPurchaseOrder.jsp</result>			
+		</action>
+		
+		<action name="search" class="actions.purchaseorder.SearchAction">
+			<result name="success">/PurchaseOrder/ViewPO.jsp</result>
+			<result name="input">/PurchaseOrder/SearchPurchaseOrder.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		
+		</package>
+</struts>

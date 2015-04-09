@@ -1,0 +1,14 @@
+
+	Voucher Management System
+
+	Group: - SARASWATS
+
+	
+76093 -	Harshavardhan Patil  - Team Leader
+76103 -  Digambar Banne	    - Coder & Tester
+76125 -  Anil T. C.	    - Coder & Tester
+76131 -	Lakhan Marda 	    - DBA
+76099 -	Pratik Chaudhari 	    - CM
+76101 - Harshad Kulkarni 	    - DPR
+76091 - Ajay Pawar	    - Coder & Tester
+76132 - Sagar Bhagwat 	    - Tester

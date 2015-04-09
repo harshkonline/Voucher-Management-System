@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<package name="admin" extends="struts-default">
+		
+		<action name="newuser" class="actions.admin.PreNewUserAction" >
+			<result name="success">/Login_jsp/CreateNewUser.jsp</result>
+		</action>
+		<action name="newvendor" >
+			<result>/Login_jsp/CreateNewVendor.jsp</result>
+		</action>	
+		<action name="newuserprocess" class="actions.admin.NewUserProcessAction" >
+			<result name="input">/Login_jsp/CreateNewUser.jsp</result>
+			<result>/Login_jsp/NewUserSuccess.jsp</result>
+		</action>	
+		<action name="newvendorprocess" class="actions.admin.NewVendorProcessAction" >
+			<result name="input">/Login_jsp/CreateNewVendor.jsp</result>
+			<result name="success">/Login_jsp/NewVendorSuccess.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>

@@ -1,0 +1,33 @@
+			IN FILE
+	*****************************************************************
+			Header Description
+	*****************************************************************
+			CUSTOMER NAME : vnd3
+			Quantity : 10
+			TYPE : paper
+			PROFILE NAME : SMS1
+			MRP : 1
+			TALKTIME : 100
+			SERVICE TAX : 3
+			PROCESSING FEE : 2
+			ADMIN FEE : 90
+			STATE TAX : 125
+			MISC : 0
+			VALIDITY PERIOD : 0
+			GRACE PERIOD 1 : SMS1
+			GRACE PERIOD 2 : 30
+			QUARANTINE PERIOD : 120
+			SHELF LIFE : 30
+			TRANSPORT KEY : 3399
+	*****************************************************************
+			----Vouchers----
+		SERIAL NO:100SM7921S2373		PIN NO:429ccf8db6594330
+		SERIAL NO:100SM7921S2374		PIN NO:d6d8c8ce2140a46c
+		SERIAL NO:100SM7921S2375		PIN NO:69ce96782c638324
+		SERIAL NO:100SM7921S2376		PIN NO:f0d2556588a07ae3
+		SERIAL NO:100SM7921S2377		PIN NO:b8a9dea860ba9ef6
+		SERIAL NO:100SM7921S2378		PIN NO:71095e63e3743253
+		SERIAL NO:100SM7921S2379		PIN NO:09fafb9220ffa0a4
+		SERIAL NO:100SM7921S2380		PIN NO:bf821c786dbd0715
+		SERIAL NO:100SM7921S2381		PIN NO:ea49ae79af1bbe78
+		SERIAL NO:100SM7921S2382		PIN NO:3ea63d3834b8bdcb

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="Login" extends="struts-default">
+		
+		<action name="Login">
+			<result>/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="checkLogin" class="actions.Login.LoginAction">
+			<result name="input">/Login_jsp/Login.jsp</result>
+			<result name="administrator">/admin_home.jsp</result>
+			<result name="operator">/operator_home.jsp</result>
+			<result name="first">/Login_jsp/ChooseQuestion.jsp</result>
+		</action>			
+		<action name="chooseQue" class="actions.Login.SetQuestionAction">
+			<result name="success">/Login_jsp/SetQuestion.jsp</result>
+		</action>
+		<action name="addQuestion" class="actions.Login.AddQuestionAction">
+			<result name="input">/Login_jsp/SetQuestion.jsp</result>
+			<result name="administrator">/admin_home.jsp</result>
+			<result name="operator">/operator_home.jsp</result>
+		</action>
+		<action name="forgetPassword_U">
+			<result>/Login_jsp/ForgetPassword_U.jsp</result>
+		</action>		
+		<action name="forgetPassword_Q" class="actions.Login.UseridAction" >
+			<result name="input">/Login_jsp/ForgetPassword_U.jsp</result>
+			<result name="success">/Login_jsp/ForgetPassword_Q.jsp</result>
+		</action>
+		
+		<action name="forgetPassword_AL" class="actions.Login.ChkAnswerAction" >
+			<result name="success">/Login_jsp/AlterPassword.jsp</result>
+			<result name="input">/Login_jsp/ForgetPassword_Q.jsp</result>
+		</action>
+		<action name="alterPwd" class="actions.Login.AlterPasswordAction" >
+			<result name="success">/Login_jsp/AlterPwdSuccess.jsp</result>
+			<result name="fail">/Login_jsp/AlterPwdFailed.jsp</result>
+			<result name="input">/Login_jsp/AlterPassword.jsp</result>
+		</action>	
+		
+		<action name="changepwd" >
+			<result>/Login_jsp/ChangePassword.jsp</result>
+		</action>
+		<action name="changepwdop" >
+			<result>/Login_jsp/ChangePassword_op.jsp</result>
+		</action>
+		<action name="changepwdprocessop" class="actions.Login.ChangePasswordAction" >
+			<result name="input">/Login_jsp/ChangePassword_op.jsp</result>
+			<result name="success">/Login_jsp/ChangePasswordSuccess.jsp</result>
+		</action>
+		
+		<action name="changepwdprocess" class="actions.Login.ChangePasswordAction" >
+			<result name="input">/Login_jsp/ChangePassword.jsp</result>
+			<result name="success">/Login_jsp/ChangePasswordSuccess.jsp</result>
+		</action>
+		
+	</package>
+	
+</struts>

@@ -1,0 +1,28 @@
+			IN FILE
+	*****************************************************************
+			Header Description
+	*****************************************************************
+			CUSTOMER NAME : administrator
+			Quantity : 5
+			TYPE : plastic
+			PROFILE NAME : Night Call
+			MRP : 2
+			TALKTIME : 30
+			SERVICE TAX : 4
+			PROCESSING FEE : 4
+			ADMIN FEE : 35
+			STATE TAX : 55
+			MISC : 5
+			VALIDITY PERIOD : 5
+			GRACE PERIOD 1 : Night Call
+			GRACE PERIOD 2 : 5
+			QUARANTINE PERIOD : 5
+			SHELF LIFE : 3
+			TRANSPORT KEY : 3360
+	*****************************************************************
+			----Vouchers----
+		SERIAL NO:100NI7921G2301		PIN NO:d6d8c8ce2140a46c
+		SERIAL NO:100NI7921G2302		PIN NO:69ce96782c638324
+		SERIAL NO:100NI7921G2303		PIN NO:f0d2556588a07ae3
+		SERIAL NO:100NI7921G2304		PIN NO:b8a9dea860ba9ef6
+		SERIAL NO:100NI7921G2300		PIN NO:429ccf8db6594330

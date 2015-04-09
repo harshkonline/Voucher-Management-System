@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="voucherprofile" namespace="" extends="struts-default">
+		
+		<action name="manageVoucherProfile">
+			<result>/VoucherProfile/ManageVoucherProfile.jsp</result>
+		</action>
+		<action name="generateVoucher">
+			<result>/VoucherProfile/ManageVoucherProfile.jsp</result>
+		</action>
+		<action name="adminhome">
+			<result>/AdminHome.jsp</result>
+		</action>
+		<action name="vouchermenu">
+			<result>/VoucherProfile/VoucherProfileMenu.jsp</result>
+		</action>
+		<action name="manageVoucherProfile">
+			<result>/VoucherProfile/ManageVoucherProfile.jsp</result>
+		</action>
+		<action name="populateList" class="actions.VoucherProfileManagement.PopulateVoucherProfileList">
+			<result>/VoucherProfile/SelectProfile.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="populateListView" class="actions.VoucherProfileManagement.PopulateVoucherProfileList">
+			<result>/VoucherProfile/SelectProfileView.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="populateListRemove" class="actions.VoucherProfileManagement.PopulateVoucherProfileList">
+			<result>/VoucherProfile/SelectProfileRemove.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="removeVoucherProfile">
+			<result>/VoucherProfile/RemoveVoucherProfile.jsp</result>
+		</action>
+		<action name="updateVoucherProfile" class="actions.VoucherProfileManagement.PopulateFields">
+			<result name="same">/VoucherProfile/dummySelectProfile.jsp</result>
+			<result>/VoucherProfile/UpdateVoucherProfile.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="viewVoucherProfile" class="actions.VoucherProfileManagement.PopulateFields">
+			<result name="same">/VoucherProfile/dummySelectProfileView.jsp</result>
+			<result>/VoucherProfile/ViewVoucherProfile.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="viewRemoveVoucherProfile" class="actions.VoucherProfileManagement.PopulateFields">
+			<result name="same">/VoucherProfile/dummySelectProfileRemove.jsp</result>
+			<result>/VoucherProfile/RemoveVoucherProfile.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="createVP" class="actions.VoucherProfileManagement.CreateVoucherProfile">
+			<result>/VoucherProfile/ShowDetails.jsp</result>
+			<result name="exists">/VoucherProfile/ManageVoucherProfile.jsp</result>
+			<result name="input">/VoucherProfile/ManageVoucherProfile.jsp</result>
+			<result name="error">/VoucherProfile/VoucherProfileMenu.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="updateVP" class="actions.VoucherProfileManagement.UpdateVoucherProfile">
+			<result>/VoucherProfile/ShowDetails.jsp</result>
+			<result name="error">/VoucherProfile/VoucherProfileMenu.jsp</result>
+			<result name="input">/VoucherProfile/UpdateVoucherProfile.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="removeVP" class="actions.VoucherProfileManagement.RemoveVoucherProfile">
+			<result>/VoucherProfile/VoucherProfileMenu.jsp</result>
+			<result name="input">/VoucherProfile/VoucherProfileMenu.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<!-- <action name="viewVP" class="actions.ViewVoucherProfile">
+			<result>/AdminHome.jsp</result>
+		</action>
+		
+	-->
+		 <action name="checkName" class="actions.VoucherProfileManagement.CheckName">
+		 	<result>/VoucherProfile/ManageVoucherProfile.jsp</result>
+		 	<result name="fail">/VoucherProfile/ManageVoucherProfile.jsp</result>
+		 	<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		 </action>
+	</package>
+</struts>

@@ -1,0 +1,23 @@
+			IN FILE
+	*****************************************************************
+			Header Description
+	*****************************************************************
+			CUSTOMER NAME : Icon
+			Quantity : 3
+			TYPE : paper
+			PROFILE NAME : night101
+			MRP : .5
+			TALKTIME : 200
+			SERVICE TAX : .49
+			PROCESSING FEE : 1.5
+			ADMIN FEE : 44.51
+			STATE TAX : 50
+			MISC : 2.5
+			VALIDITY PERIOD : .5
+			GRACE PERIOD 1 : night101
+			GRACE PERIOD 2 : 100
+			QUARANTINE PERIOD : 100
+			SHELF LIFE : 120
+			TRANSPORT KEY : 3356
+	*****************************************************************
+			----Vouchers----

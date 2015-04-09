@@ -1,0 +1,26 @@
+			IN FILE
+	*****************************************************************
+			Header Description
+	*****************************************************************
+			CUSTOMER NAME : administrator
+			Quantity : 3
+			TYPE : plastic
+			PROFILE NAME : SMS1
+			MRP : 1
+			TALKTIME : 100
+			SERVICE TAX : 3
+			PROCESSING FEE : 2
+			ADMIN FEE : 90
+			STATE TAX : 125
+			MISC : 0
+			VALIDITY PERIOD : 0
+			GRACE PERIOD 1 : SMS1
+			GRACE PERIOD 2 : 30
+			QUARANTINE PERIOD : 120
+			SHELF LIFE : 30
+			TRANSPORT KEY : 3408
+	*****************************************************************
+			----Vouchers----
+		SERIAL NO:100SM7921S2415		PIN NO:429ccf8db6594330
+		SERIAL NO:100SM7921S2416		PIN NO:d6d8c8ce2140a46c
+		SERIAL NO:100SM7921S2417		PIN NO:69ce96782c638324

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<package name="operator" extends="struts-default">
+
+		<action name="perparepurchaseorder" class="actions.operator.PreparePurchaseOrderAction">
+			<result name="success">/Operator_Jsp/PerparePurchaseOrder.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+
+		<action name="opaddress" class="actions.operator.OpaddressAction">
+			<result name="success">/Operator_Jsp/PerparePurchaseOrder.jsp</result>
+			<result name="input">/Operator_Jsp/PerparePurchaseOrder.jsp</result>
+			<result name="done">/Operator_Jsp/PerparePurchaseOrderSuccess.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+			
+		<action name="viewremoveorder" class="actions.operator.ViewRemoveAction">
+			<result name="success">/Operator_Jsp/ViewRemoveOrder.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="removeorder" class="actions.operator.RemoveOrderAction">
+			<result name="success">/Operator_Jsp/RemoveOrder.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		
+
+	</package>
+
+</struts>

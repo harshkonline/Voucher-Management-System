@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+       "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+   <field name="vp_quantity">
+      <field-validator type="int">
+      <param-name name="max" >10000</param-name>
+     <param-name name="min" > 3</param-name>
+         <message>Enter valid user id (int)  </message>
+      </field-validator>
+  </field>
+  </validators>

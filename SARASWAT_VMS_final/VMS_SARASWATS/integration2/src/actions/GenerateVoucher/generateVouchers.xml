@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	
+<package name="generateVoucher" namespace="" extends="struts-default">
+		<action name="demo" class="actions.GenerateVoucher.demo">
+			<result name="success">/Login_jsp/Login.jsp</result>
+		</action>
+		<action name="showVoucherProfiles" class="actions.GenerateVoucher.PopulateVoucherProfileAction">
+			<result name="success">/GenerateVouchers/generateByVp.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		
+		<action name="generateByVp" class="actions.GenerateVoucher.GenerateByVpAction">
+			<result name="success">/GenerateVouchers/voucherGeneratedByProfile.jsp</result>
+			<result name="input">/GenerateVouchers/generateByVp.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		
+		<action name="generateVoucherHome">
+			<result name="success">/GenerateVouchers/generateVoucherHome.jsp</result>
+		</action>
+		
+		<action name="showApprovedOrders" class="actions.GenerateVoucher.PopulatePurchaseOrderAction">
+			<result name="success">/GenerateVouchers/generateByPurchaseOrder.jsp</result>
+			<result name="empty">/GenerateVouchers/generateByPurchaseOrderEmpty.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+		
+		<action name="generateByPurchaseOrder" class="actions.GenerateVoucher.GenerateByPurchaseOrderAction">
+			<result name="success">/GenerateVouchers/voucherGeneratedByPurchaseOrder.jsp</result>
+			<result name="no_selection">/GenerateVouchers/noSelectionMade.jsp</result>
+			<result name="notLoggedIn">/Login_jsp/Login.jsp</result>
+		</action>
+
+	</package>
+</struts>

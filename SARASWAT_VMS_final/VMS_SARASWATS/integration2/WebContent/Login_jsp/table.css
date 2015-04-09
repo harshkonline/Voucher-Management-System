@@ -1,0 +1,37 @@
+TR {
+}
+BODY
+{
+	background-color: #FAFDD9;	
+}
+TABLE
+{
+	border-color:gray;
+    text-align:center;
+    background-color:#FAEFB4;
+    border:thin;
+    FONT-FAMILY:verdana, sans-serif;
+    BORDER-COLLAPSE:collapse;
+}
+TD
+{
+	
+}
+.menu{
+	background-color: #920A25;
+	border-collapse: collapse;
+	border: thin;
+}
+.errormsg{
+	background-color: maroon;
+	font-size: large;
+	font-family: cursive;
+	border: thin;
+	border-color: black;
+}
+.bold{
+	font-weight: bold;
+}
+.italic{
+	font-style: italic;
+}
